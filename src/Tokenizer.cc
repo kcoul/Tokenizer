@@ -919,6 +919,7 @@ namespace onmt
         {
           if (is_number
               || (c == '_')
+              || (c == '\'')
               || (state == State::Letter && c == '-')
               || (state == State::Letter
                   && (c == '.' || c == ',')
