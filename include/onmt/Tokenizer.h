@@ -34,7 +34,7 @@ namespace onmt
     struct Options
     {
       Mode mode = Mode::Conservative;
-      std::string lang;
+      std::string lang = "";
       bool no_substitution = false;
       bool case_feature = false;
       bool case_markup = false;
@@ -43,7 +43,7 @@ namespace onmt
       bool allow_isolated_marks = false;
       bool joiner_annotate = false;
       bool joiner_new = false;
-      std::string joiner;
+      std::string joiner = "";
       bool spacer_annotate = false;
       bool spacer_new = false;
       bool preserve_placeholders = false;
@@ -52,7 +52,7 @@ namespace onmt
       bool segment_case = false;
       bool segment_numbers = false;
       bool segment_alphabet_change = false;
-      std::vector<std::string> segment_alphabet;
+      std::vector<std::string> segment_alphabet = {};
 
       Options() = default;
       Options(Mode mode, int legacy_flags, const std::string& joiner = joiner_marker);
