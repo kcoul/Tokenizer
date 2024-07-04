@@ -60,7 +60,8 @@ set(INCLUDE_DIRECTORIES
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/include
   ${PROJECT_BINARY_DIR}
-
+  "/opt/homebrew/opt/icu4c/include"
+  "/usr/local/Cellar/icu4c/74.2/include"
   PRIVATE
   ${ICU_INCLUDE_DIRS}
   ${CMAKE_CURRENT_SOURCE_DIR}/third_party/sentencepiece/src
